@@ -7,9 +7,7 @@
     <img src="https://img.shields.io/badge/Built%20with-.NET%209.0-512BD4?logo=dotnet&logoColor=white" />
     <img src="https://img.shields.io/badge/Private%20NuGet-Server-success" />
     <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-orange" />
-    <a href="https://hub.docker.com/r/sepulvedamarcos/nuggate">
-        <img src="https://img.shields.io/docker/pulls/sepulvedamarcos/nuggate?logo=docker&logoColor=white" />
-    </a>
+    <img src="https://img.shields.io/docker/automated/sepulvedamarcos/nuggate?logo=docker&logoColor=white" />
 </p>
 
 ---
@@ -34,12 +32,14 @@ Ideal para equipos y empresas que necesitan mantener bibliotecas internas sin de
 
 ## ⚙️ Instalación 
 
-### 🐳 Opción 1 rápida: Docker
-crea la imagen docker con el siguiente comando:
-
+### Clona el repositorio
 ```bash
-docker build -t sepulvedamarcos/nuggate:latest .
+    git clone https://github.com/sepulvedamarcos/nuggate.git
+    cd nuggate
 ```
+
+### 🐳 Opción 1 rápida: Docker
+Descarga la imagen que esta publicada en este repositorio luego ejecuta el contenedor con el siguiente comando:
 
 ```bash
 docker run -d \
@@ -52,11 +52,19 @@ docker run -d \
 
 
 
+### Opción 2: Crea la imagen y el contenedor Docker
+Clona el proyecto y crea la imagen docker con el siguiente comando:
+
+```bash
+docker build -t sepulvedamarcos/nuggate:latest .
+```
+
+ahora usa el comando anterior para ejecutar el contenedor.
+
+
 ### 🖥️ Opción 2: Manual (.NET 9 SDK requerido)
 1. Clona este repositorio y ejecuta los siguientes comandos:
 ```bash
-    git clone https://github.com/sepulvedamarcos/nuggate.git
-    cd nuggate
     dotnet restore
     dotner publish --configuration Release --output ./publish
 ```
