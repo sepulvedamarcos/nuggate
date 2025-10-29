@@ -70,7 +70,7 @@ ahora usa el comando anterior para ejecutar el contenedor.
 ```
 empaqueta la aplicación en la carpeta `publish` y publica en tu servidor.
 
-🖼️ Captura swagger autodocumentado
+## 🖼️ Captura swagger autodocumentado
 
 Aquí puedes ver una imagen del swagger desplegado con los endpoint/metodos/Verbos a usar.
 

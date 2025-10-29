@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace nuggate.Controllers;
 
+/// <summary>
+/// Unico controlador de la aplicación
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 public class NugetController : ControllerBase
