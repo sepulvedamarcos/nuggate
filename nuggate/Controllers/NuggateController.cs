@@ -9,7 +9,7 @@ namespace nuggate.Controllers;
 /// </summary>
 [ApiController]
 [Route("api/[controller]")]
-public class NugetController : ControllerBase
+public class NuggateController : ControllerBase
 {
     private readonly string _packagePath = Path.Combine(Directory.GetCurrentDirectory(), "Packages");
 
@@ -24,9 +24,9 @@ public class NugetController : ControllerBase
     public IActionResult GetServiceIndex()
     {
         var json = $"{{ \"version\": \"3.0.0\", \"resources\": [";
-        json += $"{{ \"@id\": \"{Request.Scheme}://{Request.Host}/api/nuget/package/\", \"@type\": \"PackageBaseAddress/3.0.0\" }},";
-        json += $"{{ \"@id\": \"{Request.Scheme}://{Request.Host}/api/nuget/search\", \"@type\": \"SearchQueryService/3.0.0\" }},";
-        json += $"{{ \"@id\": \"{Request.Scheme}://{Request.Host}/api/nuget/upload\", \"@type\": \"PackagePublish/2.0.0\" }}";
+        json += $"{{ \"@id\": \"{Request.Scheme}://{Request.Host}/api/nuggate/package/\", \"@type\": \"PackageBaseAddress/3.0.0\" }},";
+        json += $"{{ \"@id\": \"{Request.Scheme}://{Request.Host}/api/nuggate/search\", \"@type\": \"SearchQueryService/3.0.0\" }},";
+        json += $"{{ \"@id\": \"{Request.Scheme}://{Request.Host}/api/nuggate/upload\", \"@type\": \"PackagePublish/2.0.0\" }}";
         json += "]}";
 
         return Content(json, "application/json");
