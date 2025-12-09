@@ -7,10 +7,6 @@
     <img src="https://img.shields.io/badge/Built%20with-.NET%209.0-512BD4?logo=dotnet&logoColor=white" />
     <img src="https://img.shields.io/badge/Private%20NuGet-Server-success" />
     <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-orange" />
-    <img src="https://img.shields.io/docker/automated/sepulvedamarcos/nuggate?logo=docker&logoColor=white" />
-    <a href="https://ko-fi.com/sepulvedamarcos">
-    <img src="https://img.shields.io/badge/Ko--fi-Apoyar%20con%20un%20caf%C3%A9-ff5e5b?logo=kofi&logoColor=white" />
-  </a>    
 </p>
 
 ---
@@ -26,67 +22,75 @@ Ideal para equipos y empresas que necesitan mantener bibliotecas internas sin de
 
 ## 🚀 Características
 
-- 🪶 **Ligero** — Web API .NET 9 sin dependencias innecesarias  
-- 🔒 **Privado y seguro** — control total del acceso a tus paquetes  
-- ⚙️ **Autoalojado** — en tu servidor con pubicación de api o en un contenedor Docker  
-- 🧱 **Simple de configurar** — archivos planos en almacenamiento local del servidor
+- **Ligero** — Web API .NET 9 sin dependencias innecesarias  
+- **Privado y seguro** — control total del acceso a tus paquetes  
+- **Autoalojado** — en tu servidor con pubicación de api o en un contenedor Docker  
+- **Simple de configurar** — archivos planos en almacenamiento local del servidor
 
 ---
 
 ## ⚙️ Instalación 
 
-### Clona el repositorio
+### Opción 1: Manual (.NET 9 SDK requerido)
+1. Clona este repositorio y ejecuta los siguientes comandos:
 ```bash
     git clone https://github.com/sepulvedamarcos/nuggate.git
     cd nuggate
-```
-
-### 🐳 Opción 1 rápida: Docker
-Descarga la imagen que esta publicada en este repositorio luego ejecuta el contenedor con el siguiente comando:
-
-```bash
-docker run -d \
-  -p 8080:80 \
-  -v /ruta/a/paquetes:/app/packages \
-  -e NUGGATE_APIKEY="mi_clave_secreta" \
-  --name nuggate \
-  sepulvedamarcos/nuggate:latest
-```
-
-
-
-### Opción 2: Crea la imagen y el contenedor Docker
-Clona el proyecto y crea la imagen docker con el siguiente comando:
-
-```bash
-docker build -t sepulvedamarcos/nuggate:latest .
-```
-
-ahora usa el comando anterior para ejecutar el contenedor.
-
-
-### 🖥️ Opción 2: Manual (.NET 9 SDK requerido)
-1. Clona este repositorio y ejecuta los siguientes comandos:
-```bash
     dotnet restore
-    dotner publish --configuration Release --output ./publish
+    dotneT publish --configuration Release --output ./publish
 ```
-empaqueta la aplicación en la carpeta `publish` y publica en tu servidor.
+
+2. Empaqueta la aplicación en la carpeta `publish` y publica en tu servidor.
+
+### Opción 2: Docker (proximamente)
+
 
 ## 🖼️ Captura swagger autodocumentado
 
-Aquí puedes ver una imagen del swagger desplegado con los endpoint/metodos/Verbos a usar.
+Aquí puedes ver una imagen del swagger desplegado con los endpoint con sus verbos a copnsumir.
 
 ![Nuggate Screenshot](nuggate_api.png)
 
-## ⚖️ Licencia
+## Como usar en tu aplicación
+Debe localizar el archivo **NuGet.config** que esta en ubicado en:
+  - **LINUX** /home/usuario/.nuget/NuGet/
+  - **Windows** C:\Users\TuUsuario\AppData\Roaming\NuGet\NuGet.Config
+  
+---
 
-Este proyecto está licenciado bajo la GPL-V3.0 License.
-Consulta el archivo LICENSE para más información.
+## 🤝 Contribuir
 
+¡Las contribuciones son bienvenidas! Ya sea reportando bugs, sugiriendo funcionalidades o enviando código.
 
-## ¿Te resultó útil Nuggate?
+1. Has un **Fork** del proyecto
+2. Crea tu branch (`git checkout -b feature/nueva-funcionalidad`)
+3. Commit tus cambios (`git commit -m 'Agrega nueva funcionalidad'`)
+4. Push al branch (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
+---
+
+### 👥 Conectemos
 
 <p align="center">
-    ⭐ Dale una estrella al repositorio
+  <a href="https://www.linkedin.com/in/sepulveda-marcos">
+    <img src="https://img.shields.io/badge/LinkedIn-Marcos%20Sep%C3%BAlveda-blue?logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:sepulvedamarcos@gmail.com">
+    <img src="https://img.shields.io/badge/Email-sepulvedamarcos%40gmail.com-red?logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://ko-fi.com/sepulvedamarcos">
+    <img src="https://img.shields.io/badge/Ko--fi-Apoyar%20con%20un%20caf%C3%A9-ff5e5b?logo=kofi&logoColor=white" />
+  </a>
+</p>
+
+---
+
+**¿Te gusta Nuggate?**
+
+⭐ Dale una estrella al repo y cuéntanos tu experiencia 
+
+---
+<p align="center">
+  <i>"Una aplicación no debería obligarte a reorganizar tu vida digital. Debería adaptarse a como ya trabajas."</i>
 </p>

@@ -16,9 +16,9 @@ builder.Services.AddSwaggerGen(options =>
     //Titulo
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "NuGet Server",
+        Title = "Nuggate Server",
         Version = version,
-        Description = $"Servidor de NuGet \n- Versión {version} - Fecha {fecha}"
+        Description = $"Servidor de paquetes nuget \n- Versión {version} - Fecha {fecha}"
     });
 
 
