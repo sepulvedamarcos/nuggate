@@ -1,6 +1,6 @@
 <h1>Nuggate</h1>
 
-<p><b>Tu servidor privado de paquetes NuGet — simple, seguro y autoalojado</b><br/></p>
+Tu servidor privado de paquetes NuGet — simple, seguro y autoalojado
 
 <p>
     <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" />
