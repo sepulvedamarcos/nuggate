@@ -8,6 +8,9 @@
     <img src="https://img.shields.io/badge/Private%20NuGet-Server-success" />
     <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-orange" />
     <img src="https://img.shields.io/docker/automated/sepulvedamarcos/nuggate?logo=docker&logoColor=white" />
+    <a href="https://ko-fi.com/sepulvedamarcos">
+    <img src="https://img.shields.io/badge/Ko--fi-Apoyar%20con%20un%20caf%C3%A9-ff5e5b?logo=kofi&logoColor=white" />
+  </a>    
 </p>
 
 ---
@@ -83,11 +86,7 @@ Consulta el archivo LICENSE para más información.
 
 
 ## ¿Te resultó útil Nuggate?
-<p align="center"><p align="center">
 
-[![Dale una estrella al repositorio](https://img.shields.io/github/stars/sepulvedamarcos/nuggate?style=social)](https://github.com/sepulvedamarcos/nuggate/stargazers)
-
-  <a href="https://ko-fi.com/sepulvedamarcos">
-    <img src="https://img.shields.io/badge/Ko--fi-Apoyar%20con%20un%20caf%C3%A9-ff5e5b?logo=kofi&logoColor=white" />
-  </a>
+<p align="center">
+    ⭐ Dale una estrella al repositorio
 </p>
