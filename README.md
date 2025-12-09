@@ -82,8 +82,12 @@ Este proyecto está licenciado bajo la GPL-V3.0 License.
 Consulta el archivo LICENSE para más información.
 
 
-☕ Apoya el proyecto
+## ¿Te resultó útil Nuggate?
+<p align="center"><p align="center">
 
-¿Te resultó útil Nuggate?
-⭐ Dale una estrella al repositorio o
-☕ Invítame un café
+[![Dale una estrella al repositorio](https://img.shields.io/github/stars/sepulvedamarcos/nuggate?style=social)](https://github.com/sepulvedamarcos/nuggate/stargazers)
+
+  <a href="https://ko-fi.com/sepulvedamarcos">
+    <img src="https://img.shields.io/badge/Ko--fi-Apoyar%20con%20un%20caf%C3%A9-ff5e5b?logo=kofi&logoColor=white" />
+  </a>
+</p>
