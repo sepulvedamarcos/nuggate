@@ -55,7 +55,13 @@ Aquí puedes ver una imagen del swagger desplegado con los endpoint con sus verb
 Debe localizar el archivo **NuGet.config** que esta en ubicado en:
   - **LINUX** /home/usuario/.nuget/NuGet/
   - **Windows** C:\Users\TuUsuario\AppData\Roaming\NuGet\NuGet.Config
-  
+
+Luego agregar la siguiente linea:
+```bash
+<add key="nuggate.org" value="https://api.tudominio.cl/api/nuggate/index.json" protocolVersion="3" />
+```
+
+
 ---
 
 ## 🤝 Contribuir
